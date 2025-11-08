@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMF - Big Men Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">BMF</div>
+    <nav id="nav-links">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <section class="hero">
+    <h1>Big Men Fashion</h1>
+    <p>Luxury & Confidence in Every Stitch</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About BMF</h2>
+    <p>BMF - Big Men Fashion specializes in high-quality, stylish men’s clothing.
+    We bring confidence and class to every outfit, designed for men who value both comfort and elegance.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250" alt="Suit">
+        <h3>Classic Suits</h3>
+        <p>Tailored for excellence and confidence.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250" alt="Casual Wear">
+        <h3>Casual Wear</h3>
+        <p>Stylish comfort for every occasion.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/250x250" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Finishing touches that make the man.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +234 000 000 0000</p>
+    <p>📧 info@bmffashion.com</p>
+    <p>💬 <a href="#">Chat on WhatsApp</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BMF - Big Men Fashion. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

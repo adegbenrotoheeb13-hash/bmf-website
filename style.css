@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: gold;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+.menu {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #000, #111);
+}
+
+.hero h1 {
+  font-size: 45px;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: gold;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about h2 {
+  color: gold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Products */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.products h2 {
+  color: gold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #000;
+  border: 1px solid gold;
+  border-radius: 10px;
+  width: 250px;
+  padding: 15px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: gold;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* 🌍 Mobile Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
